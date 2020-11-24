@@ -15,17 +15,13 @@ import styles from '../constants/styles';
 import User from '../User';
 
 export default class ChatScreen extends Component {
-  static navigationOptions = ({route}) => ({
-    title: route.params.name,
+  static navigationOptions = ({}) => ({
+    
   });
 
   constructor(props) {
     super(props);
     this.state = {
-      person: {
-        name: props.route.params.name,
-        phone: props.route.params.phone,
-      },
       textMessage: '',
       messageList: [],
     };
